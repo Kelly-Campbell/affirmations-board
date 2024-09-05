@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  background: #fa255e;
+  font-family: 'Mooli', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #f8e5e5;
+}
+
+p,
+ul li {
+  color: black;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header,
+main,
+footer {
+  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
+  display: flex;
+
+  /* Add a Flexbox property to center the contents of each section. */
+  justify-content: center;
+
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  /* Add a Flexbox property to make the content-wrapper a flex parent container. */
+  display: flex;
+  /* Add a Flexbox property to allow the flex child items to wrap. */
+  flex-wrap: wrap;
+
+  /* Add a Flexbox property to center the contents of each section. */
+  justify-content: center;
+}
+
+main .content-wrapper {
+  /* Add the gap property with a value of 20px to create space between the rows and columns. */
+  gap: 20px;
+}
+
+.affirmation-block {
+  border-radius: 5px;
+  width: 100%;
+  background: #9cf6fb;
+  /* Add a Flexbox property to make every block with text a flex parent container. */
+  display: flex;
+  /* Add a Flexbox property to align the text in each block at its center. */
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #07c0e6;
+}
+
+.gif-block {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.copyright {
+  color: #f2f1fb;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  .center-wrapper {
+    /* Add a Flexbox property to make the content-wrapper a flex parent container. */
+    display: flex;
+    /* Add a Flexbox property to allow the flex child items to wrap. */
+    flex-wrap: wrap;
+    /* Add the Flexbox property align-content with a value of space-around to space the content vertically. */
+    align-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  .affirmation-block {
+    width: 45%;
+  }
+
+  .gif-block {
+    width: 48%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .affirmation-block {
+    width: 30%;
+  }
+
+  .gif-block {
+    width: 31.8%;
+  }
+}
